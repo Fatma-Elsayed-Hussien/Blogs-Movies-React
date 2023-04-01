@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.error-message{
+  color: red;
+  font-size: 0.9rem;
+}
+.invalid{
+  border: 1px solid red;
+  box-shadow: 0 0 2px rgba(255, 0, 0, 0.845);
+}
+#file_input{
+  display: none;
+}
+#file_label:hover{
+  color: #570df8;
+  border: 2px dashed #570df8;
+}

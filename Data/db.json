@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "email": "fatma@gmail.com",
+      "password": "$2a$10$CWoxTLYBax0pRuwf6QUZYOkF7/mDgOWe.J5.FxEcKRk9nUQWnVhB6",
+      "name": "fatma",
+      "confirm_pass": "123456",
+      "id": 1
+    },
+    {
+      "email": "dalida@gmail.com",
+      "password": "$2a$10$0nS7jHwpqtY8F4VpIfl8V.FEXKdQlMA6zS.OPAlDmglkBfbH1Z69S",
+      "username": "Dalida",
+      "confirmPassword": "123456",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "title": "Gifted",
+      "description": "Single Frank Adler, who works as a freelance boat repairman and lives in a trailer park on the Florida coast, has been guardian to his seven year old niece Mary Adler since she was a newborn after her mother, Frank's sister, Diane Adler, committed suicide. At the time, Frank was a Philosophy professor at Boston University, he moving with Mary in an effort to 'escape'. Like her mother, Mary is a math prodigy, of which Frank is well aware. Frank has home schooled Mary up until now in an effort to protect her from people like who he was escaping from, his and Diane's own mother, uncompromising (to use Frank's vernacular) Evelyn Adler, who, if she had custody, would have had a singular focus in the math prodigy aspect of Mary, much like she was with Diane. Frank, who has largely treated Mary like an equal in being up front with her about most things, has now decided to send Mary to a regular public school in an effort to socialize her to other children and to make her feel like a normal child, with their neighbor, adult Roberta Taylor, Mary's only real friend besides Frank. Roberta routinely sits with Mary to allow Frank his regular Friday out at the bar for himself. Although Frank cautions Mary about not being too 'obvious' at school, Mary's teacher, Bonnie Stevenson, quickly discovers not only Mary's advanced math abilities, but her background being Diane's daughter. Although Miss Stevenson, like Frank, wants what's best holistically for Mary, the process to provide an advanced education to Mary at the expense of all else begins to snowball to the point where Evelyn learns of Frank and Mary's whereabouts. Not agreeing with any of Frank's choices, Evelyn sues for full custody, which brings into light the entire dynamic that existed and exists between Evelyn, Frank and Diane.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjQ2NDU3NDE0M15BMl5BanBnXkFtZTgwMjA3OTg0MDI@._V1_.jpg",
+      "id": 1
+    },
+    {
+      "title": "Gifted Hands",
+      "description": "It is the true story of a black child raised by a single mother who constantly encouraged him to use his God-given gifts. He grows from being a poor student to the top of his class and then to become a world-famous neurosurgeon. It would be hard not to be inspired by this movie. As the story begins, Ben (played by Cuba Gooding, Jr.) is asked to attempt a surgery to separate German twins conjoined at the head. The movie then flashes back to show when Ben (as a child played by Jaishon Fisher) was such a poor student he failed to get a single answer right on a test. He is unmercifully ridiculed by his white classmates, one of whom he hits in the mouth. His mother (Kiberly Elise) is called to the principal’s office. Ben’s mother responds by insisting to Ben and his brother that they are not stupid and that they have gifts given to them by God that they need to nurture. She also limits their television viewing and requires them to read. Ben’s grades gradually rise until he becomes the best student in his school. At an awards ceremony, his success is recognized, but a teacher berates his white classmates for letting a black child from a broken home do better than them. Ben’s mother moves to a school district where Ben is among more black students. Ben begins to rebel. In a fit of anger, he tries to stab his best friend, but the blade to his knife breaks on the boy’s belt buckle. Ben comes home and cries out to God for help in overcoming his temper. Ben hears the story of a missionary doctor and decides to pursue a career in medicine. Repeatedly, Ben has to overcome prejudice to be able to let the gifts God has given him blossom. The message of this movie is that by focusing on God’s will for your life you can become the very best you can be and will become God’s agent in ministering to others. Rather than settling in to a life believing he was inferior, underprivileged and discriminated against, Ben looked to God for help and became an astounding example, not just for black children, but also for everyone. The people who made this movie are to be commended for so clearly showing that God has the cure for both self-doubt and prejudice.",
+      "image": "https://portalwp.s3.amazonaws.com/wp-content/uploads/2020/08/13081655/13-filme-abre-jejum-de-daniel.jpg",
+      "id": 2
+    },
+    {
+      "title": "Hidden Figures",
+      "description": "As the U.S raced against Russia to put a man in space, NASA found untapped talent in a group of African-American female mathematicians that served as the brains behind one of the greatest operations in U.S. history. Based on the unbelievably true life stories of three of these women, known as 'human computers', we follow these women as they quickly rose the ranks of NASA alongside many of history's greatest minds specifically tasked with calculating the momentous launch of astronaut John Glenn into orbit, and guaranteeing his safe return. Dorothy Vaughan, Mary Jackson, and Katherine Gobels Johnson crossed all gender, race, and professional lines while their brilliance and desire to dream big, beyond anything ever accomplished before by the human race, firmly cemented them in U.S. history as true American heroes.",
+      "image": "https://raisingchildren.net.au/__data/assets/image/0019/51436/hidden-figures.jpg",
+      "id": 3
+    },
+    {
+      "title": "Wonder",
+      "description": "Based on the New York Times bestseller, 'Wonder' tells the incredibly inspiring, heartwarming story of August Pullman. Born with facial differences that, up until now, have prevented him from going to a mainstream school, Auggie becomes the most unlikely of heroes when he enters the local fifth grade. As his family, his new classmates, and the larger community all struggle to discover their compassion and acceptance, Auggie's extraordinary journey will unite them all and prove you can't blend in when you were born to stand out.",
+      "image": "https://lh3.googleusercontent.com/-OZS4sbMNabM/Y-UPkq0f-BI/AAAAAAAADZw/cRkPiX8lHnMMwK-6eZZ5xpoMvOGbRARHACNcBGAsYHQ/s1600/1675956098976444-0.png",
+      "id": 4
+    },
+    {
+      "title": "The Help",
+      "description": "Set in Mississippi during the 1960s, Skeeter (Stone) is a southern society girl who returns from college determined to become a writer, but turns her friends' lives -- and a Mississippi town -- upside down when she decides to interview the black women who have spent their lives taking care of prominent southern families. Aibileen (Davis), Skeeter's best friend's housekeeper, is the first to open up -- to the dismay of her friends in the tight-knit black community. Despite Skeeter's life-long friendships hanging in the balance, she and Aibileen continue their collaboration and soon more women come forward to tell their stories -- and as it turns out, they have a lot to say. Along the way, unlikely friendships are forged and a new sisterhood emerges, but not before everyone in town has a thing or two to say themselves when they become unwittingly -- and unwillingly -- caught up in the changing times.",
+      "image": "https://img.hulu.com/user/v3/artwork/45859bf8-a327-4118-8789-2d02c7d96db4?base_image_bucket_name=image_manager&base_image=e6d000ec-3b4b-4f9d-b9d9-d876200a22f7&size=458x687&format=jpeg",
+      "id": 5
+    },
+    {
+      "title": "Ayla: The Daughter of War",
+      "description": "The movie is a real-life story of Turkish Army Sergeant Suleyman and his adopted daughter Ayla during the Korean War in the 1950s. Followed by a documentary Kore Ayla (2010) the movie is directed by Can Ulkay. It was pre-screened for the first time in Turkey at Grand Pera Emek Movie Theatre by the Beyoğlu Municipality on the 60th anniversary of the friendship between Turkey and the Republic of Korea. The movie belongs to the war and drama genre. Wars always created devastating experiences, mankind has ever gone through. But there is a saying by famous Roman philosopher Seneca, ‘Wherever there is a human being, there is an opportunity of kindnesses.’ Indeed, this movie is a perfect portrayal of that thought. Amidst of war, it was impossible to find the child’s family so that they brought her to the camp and gave her a Turkish name Ayla which means like the moon. Soon, Ayla became the apple of the eye of everyone living in the army camp. She started calling Suleyman Baba, which is a father in Turkish and his other colleagues became her uncles. That’s how the bonafide generous love story initiates. Though Suleyman was not his biological father despite his affection towards her was more than that.Being a paramount symbol of a father Suleyman took care of Ayla for 15 months. Then the trouble started which will lead him to a dilemma either returning to Turkey or living in Korea. Getting stuck in this labyrinth, will Suleyman become able to be reunited with Ayla? How long they have to wait for each other? To know the answers we need to watch that movie. Indeed, it was a true example of love, kindness and humanity.",
+      "image": "https://m.media-amazon.com/images/M/MV5BZjE2NGYwMGQtOWE4MC00NTFjLTk3YTgtMWI5ZmZlMzUyYzExXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+      "id": 6
+    },
+    {
+      "title": "I am Sam",
+      "description": "Sam is a mentally challenged adult. His life is complicated with the birth of a daughter whom he names Lucy. Seven years later, Lucy still loves having a father who is childlike and enthusiastic about everything. But when she starts school, things change. Lucy realizes that he is very different from other adults. things go from bad to worse with the Department of Child and Family Services taking Lucy away from him. Rita, a hotshot lawyer, is convinced by her colleagues to take Sam's custody case pro bono. This Movie proves that life is more than academics and textbook intelligence, but rather our virtues, such as love and compassion, and our relationships with other people. It shows you the things that truly matter in life. Involving and very heartfelt this movie will make you smile and the end is simply beautiful and complete in its authenticity.",
+      "image": "https://pbs.twimg.com/media/CzimW_SWQAA_ZkT.jpg:large",
+      "id": 7
+    },
+    {
+      "title": "My Name is Khan",
+      "description": "It is a politically correct Indian movie about a man with Asperger’s Syndrome who emigrates to America and becomes embroiled in tragic events following the 9/11 terrorist attacks on the United States. Rizwan Khan, a Muslim from the Borivali section of Mumbai, suffers from Asperger's syndrome, a form of high-functioning autism that complicates socialization. After 9/11, Rizwan is detained by authorities at LAX who mistake his disability for suspicious behavior. Following his arrest, he meets Radha, a therapist who helps him deal with his situation and his affliction. Rizwan then begins a journey to meet US President Bush to clear his name.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTUyMTA4NDYzMV5BMl5BanBnXkFtZTcwMjk5MzcxMw@@._V1_.jpg",
+      "id": 8
+    },
+    {
+      "title": "Hichki",
+      "description": "Hichki presents a positive and inspiring story about a woman who turns her most daunting weakness into her biggest strength. Naina Mathur (Rani Mukerji) is an aspiring teacher who suffers from Tourette Syndrome. After several interviews and numerous rejections, she lands her dream job as a full-time teacher in one of the most elite schools in the city. However, she soon realises that the class she has been assigned comprises of defiant and impish students who can't seem to keep out of trouble. Despite a few initial hiccups, Naina must do whatever she can to ensure that her students realise their true potential, and defy all the odds against them.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMDNkZTVjYWMtZGJjNS00YTM5LWI1YmMtYmY0ZDFlOWNlZjFmXkEyXkFqcGdeQXVyMTkzOTcxOTg@._V1_.jpg",
+      "id": 9
+    },
+    {
+      "title": "Bajrangi Bhaijaan",
+      "description": "An Indian man with a magnanimous heart takes a young mute Pakistani girl back to her homeland to reunite her with her family. A little mute girl from a Pakistani village gets lost on her return back from a trip to India. In Kurukshetra, she meets Pawan - an ardent devotee of Lord Hanuman - who is in the midst of a challenge posed by his lover's father. In trying to discover the girl's parents, he develops an unshakable bond with her. He tries to get into Pakistan through a path righteous to his conscience and later, accompanied with a smart Pakistani news reporter - a story that captures the imagination of the public in both countries.",
+      "image": "https://im.rediff.com/movies/2020/jul/13bajrangi-bhaijaan2.jpg?w=670&h=900",
+      "id": 10
+    },
+    {
+      "title": "Sui Dhaaga",
+      "description": "Sui Dhaaga",
+      "image": "https://play-lh.googleusercontent.com/42gDTce1_lIGXSMKRid3aM5J6AF5EzUDewLH1MN4XCH3VNMNuHgVjm90jDAMhQIqIAs_",
+      "id": 11
+    },
+    {
+      "title": "Taare Zameen Par",
+      "description": "Ishaan is an eight-year-old child whose world is filled with wonders that no one else seems to appretiate are just not important in the world of adults, who are much more interested in things like homework, marks and neatness. And Ishaan just cannot seem to get anything right in class. When he gets into far more trouble than his parents can handle, he is packed off to a boarding school to 'be disciplined'. Things are no different at his new school, and Ishaan has to contend with the added trauma of separation from his family. One day a new art teacher bursts onto the scene, Ram Shankar Nikumbh, who infects the students with joy and optimism. He breaks all the rules of 'how things are done' by asking them to think, dream and imagine, and all the children respond with enthusiasm, all except Ishaan. Nikumbh soon realizes that Ishaan is very unhappy, and he sets out to discover why. With time, patience and care, he ultimately helps Ishaan find himself.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMDhjZWViN2MtNzgxOS00NmI4LThiZDQtZDI3MzM4MDE4NTc0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+      "id": 12
+    },
+    {
+      "title": "Black",
+      "description": "Michelle is 'special' in more ways than one. She cannot see, hear, or speak. She inhabits a world of infinite BLACK--a seamless, endless void where nothing reaches her and she reaches nothing. Her world is frightening in its complete remoteness. On the sheer will of her ferocious rage against destiny, Michelle struggles to stay afloat in the impenetrable whirlpool her life has become. into this devastating isolation enters battle-weary teacher Debraj Sahai, life's wounded but arrogantly-insolent warrior. With a single-minded obsession, Debraj takes up a challenge that is next to impossible: to lead this wild, uncontrollable child into the light of knowledge. Thus begins a journey of two headstrong individuals. They will overcome failures, obstacles, even ridicule as they tread the path less taken. What they seeks is that moment of miracle when the ray of knowledge will penetrate through the dense black of Michelle's life. Black is the cathartic tale of a deaf, mute, blind girl who saw what people with sight fail to see",
+      "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81TVOQFeYYL._AC_UF894,1000_QL80_.jpg",
+      "id": 13
+    }
+  ]
+}
