@@ -45,6 +45,9 @@ export default function Register() {
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
+    defaultValues:{
+      gender: "female",
+    }
   });
 
   const formSubmit = async (dataForm) => {
@@ -146,7 +149,6 @@ export default function Register() {
                 </label>
                 <div className="flex items-center mr-4">
                   <input
-                    checked
                     id="female-radio"
                     type="radio"
                     value="female"
