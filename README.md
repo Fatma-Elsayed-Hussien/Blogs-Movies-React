@@ -14,7 +14,8 @@ It is a responsive website built using React.js and Tailwind CSS that allows use
 1. React.js
 2. React hook form & Yup
 3. Axios
-4. Tailwind CSS
+4. React toastify
+5. Tailwind CSS
 
 # Installation
 1. Clone the repository
