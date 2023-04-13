@@ -126,7 +126,7 @@ export default function Home({ posts, setPosts, handleDeletePost }) {
                 <div className="text-center">
                   <div className="w-80">
                     <img
-                      src="/src/assets/images/noResults.png"
+                      src="https://i.ibb.co/V3jRMJm/no-Results.png"
                       className="w-full"
                     />
                   </div>
