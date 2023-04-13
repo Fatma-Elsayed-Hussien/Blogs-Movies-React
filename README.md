@@ -1,5 +1,6 @@
 # Blogs-Movies
 It is a responsive website built using React.js and Tailwind CSS that allows users to search for, create, edit, and delete posts.
+![project](https://user-images.githubusercontent.com/89316208/231810060-41e88732-1f50-462c-b13b-6f685f733498.png)
 
 # Features
 - Display all blogs without login.
