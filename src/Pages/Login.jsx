@@ -47,8 +47,9 @@ export default function Login() {
       );
       localStorage.setItem("userToken", data.data.access_token);
       localStorage.setItem("userId", data.data.user._id);
-      data.data.user.photo &&
-        localStorage.setItem("userPhoto", data.data.user.photo);
+      data.data.user.photo
+        ? localStorage.setItem("userPhoto", data.data.user.photo)
+        : localStorage.setItem("userPhoto", "");
       navigate("/");
     } catch (error) {
       console.log(error);
