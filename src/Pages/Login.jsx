@@ -16,7 +16,7 @@ const schema = yup.object({
     .string()
     .required("Email is a required field")
     .matches(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, "Email is not valid"),
-  password: yup.string().min(6, "Password must be at least 6 characters"),
+  password: yup.string().min(8, "Password must be at least 8 characters"),
 });
 
 export default function Login() {
@@ -47,6 +47,8 @@ export default function Login() {
       );
       localStorage.setItem("userToken", data.data.access_token);
       localStorage.setItem("userId", data.data.user._id);
+      data.data.user.photo &&
+        localStorage.setItem("userPhoto", data.data.user.photo);
       navigate("/");
     } catch (error) {
       console.log(error);
@@ -79,7 +81,7 @@ export default function Login() {
                 label="Email"
                 name="email"
                 type="email"
-                placeholder="email"
+                placeholder="example@email.com"
                 register={{ ...register("email") }}
                 errorMessage={errors.email?.message}
               />
@@ -88,7 +90,7 @@ export default function Login() {
                   label="Password"
                   name="password"
                   type={show ? "text" : "password"}
-                  placeholder="password"
+                  placeholder="●●●●●●●●●●●●"
                   register={{ ...register("password") }}
                   errorMessage={errors.password?.message}
                 />
@@ -103,7 +105,9 @@ export default function Login() {
               <div className="form-control mt-6">
                 <button className="btn btn-primary capitalize">
                   <span>
-                    {loading && <Loader w={"6"} color={"fill-white"} />}{" "}
+                    {loading && (
+                      <Loader w={"w-6"} h={"h-6"} color={"fill-white"} />
+                    )}{" "}
                   </span>
                   Login
                 </button>

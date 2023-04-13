@@ -49,9 +49,7 @@ export default function AddEditBlog({ handleAddNewPost, handleEditPost }) {
     //Check if "photo" is not string(URL from backend) ---> in Edit mode
     if (data?.photo[0] && typeof getValues("photo") !== "string") {
       form.append("photo", data?.photo[0]);
-    } else {
-      console.log(getValues("photo"));
-    }
+    } 
     form.append("title", data.title);
     form.append("description", data.description);
 
@@ -68,7 +66,6 @@ export default function AddEditBlog({ handleAddNewPost, handleEditPost }) {
       console.log(data.data);
 
       setValue("photo", data.data.photo);
-      console.log(getValues("photo"));
       setSelectedImage(data.data.photo);
       setValue("title", data.data.title);
       setValue("description", data.data.description);
@@ -80,7 +77,6 @@ export default function AddEditBlog({ handleAddNewPost, handleEditPost }) {
     try {
       setLoading(true);
       // Call Backend
-      console.log(blogForm);
       const { data } = await axios.post(
         "https://blog-backend-amwb.onrender.com/v1/post",
         blogForm,
@@ -91,9 +87,9 @@ export default function AddEditBlog({ handleAddNewPost, handleEditPost }) {
           },
         }
       );
-      toast.success("Blog Added Successfully");
       // Update app state
       handleAddNewPost(data.data);
+      toast.success("Blog Added Successfully");
     } catch (error) {
       console.log(error);
       setLoading(false);
@@ -176,7 +172,6 @@ export default function AddEditBlog({ handleAddNewPost, handleEditPost }) {
                       </div>
                     </label>
                     <input
-                      className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                       id="file_input"
                       type="file"
                       name="photo"
@@ -243,7 +238,9 @@ export default function AddEditBlog({ handleAddNewPost, handleEditPost }) {
               <div className="form-control mt-6">
                 <button type="submit" className="btn btn-primary capitalize">
                   <span>
-                    {loading && <Loader w={"6"} color={"fill-white"} />}{" "}
+                    {loading && (
+                      <Loader w={"w-6"} h={"h-6"} color={"fill-white"} />
+                    )}{" "}
                   </span>
                   {postid === "add" ? "Add Blog" : "Update Blog"}
                 </button>

@@ -10,7 +10,7 @@
   border: 1px solid red;
   box-shadow: 0 0 2px rgba(255, 0, 0, 0.845);
 }
-#file_input{
+#file_input, #file_input_profile{
   display: none;
 }
 #file_label:hover{

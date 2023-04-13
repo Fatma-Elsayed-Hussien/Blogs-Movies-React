@@ -8,12 +8,11 @@ import Loader from "../Components/Loader";
 export default function BlogDetails() {
   const { postid } = useParams();
   const [blog, setBlog] = useState({});
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchPostById() {
       try {
-        setLoading(true);
         const { data } = await axios.get(
           `https://blog-backend-amwb.onrender.com/v1/post/${postid}`
         );
@@ -21,11 +20,12 @@ export default function BlogDetails() {
           photo: data.data.photo,
           title: data.data.title,
           description: data.data.description,
-          username: data.data.user.username,
-          gender: data.data.user.gender,
+          user: data.data.user,
+          createdAt: data.data.createdAt,
         });
-      } catch (error) {
         setLoading(false);
+      } catch (error) {
+        setLoading(true);
         console.log(error);
         toast.error("Something went wrong, please try again later");
       }
@@ -36,10 +36,13 @@ export default function BlogDetails() {
   return (
     <div
       className="hero min-h-screen bg-base-200 p-2 sm:p-12 lg:p-4 md:p-4"
-      style={{ display: "inherit" }}
+      style={{ display: `${loading ? "flex" : "inherit"}` }}
+      // style={{ display: "inherit" }}
     >
-      {!loading ? (
-        <Loader w={"14"} color={"fill-[#570df8]"} />
+      {loading ? (
+        <div className="m-auto">
+          <Loader w={"w-[3.2rem]"} h={"h-[3.2rem]"} color={"fill-[#570df8]"} />
+        </div>
       ) : (
         <div className="card w-full shadow-2xl bg-base-100 hero-content flex-col lg:flex-row-reverse md:flex-row-reverse lg:max-w-6xl md:max-w-6xl m-auto items-start">
           <div className="text-center lg:text-left w-full lg:w-2/6 md:w-5/12 lg:h-full sm:display-none">
@@ -55,17 +58,40 @@ export default function BlogDetails() {
             <div className="card-user flex items-center justify-start">
               <div className="avatar">
                 <div className="w-12 rounded-full">
-                  {blog.gender === "male" ? (
-                    <img src={"https://i.ibb.co/tLP36v7/male.webp"} />
+                  {blog.user.gender === "male" ? (
+                    <img
+                      src={`${
+                        !blog.user.photo
+                          ? "https://i.ibb.co/tLP36v7/male.webp"
+                          : blog.user.photo
+                      }`}
+                    />
                   ) : (
-                    <img src={"https://i.ibb.co/TKPT0DJ/female.png"} />
+                    <img
+                      src={`${
+                        !blog.user.photo
+                          ? "https://i.ibb.co/TKPT0DJ/female.png"
+                          : blog.user.photo
+                      }`}
+                    />
                   )}
                 </div>
               </div>
-              <h4 className="card-user-name text-base font-semibold px-3 capitalize">
-                {" "}
-                {blog.username}{" "}
-              </h4>
+              <div>
+                <h4 className="card-user-name text-lg font-semibold px-3 capitalize">
+                  {" "}
+                  {blog.user.username}{" "}
+                </h4>
+                <p className="text-sm text-gray-600 px-3">
+                  {new Date(blog.createdAt).toLocaleDateString("en-US", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                    hour: "numeric",
+                    minute: "numeric",
+                  })}
+                </p>
+              </div>
             </div>
             <h2 className="card-title text-2xl font-bold capitalize">
               {" "}

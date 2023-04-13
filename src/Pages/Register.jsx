@@ -21,7 +21,10 @@ const schema = yup.object({
     .string()
     .required("Email is a required field")
     .matches(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, "Email is not valid"),
-  password: yup.string().min(6, "Password must be at least 6 characters"),
+  password: yup
+    .string()
+    .required("Password is a required field")
+    .min(8, "Password must be at least 8 characters"),
   confirmPassword: yup
     .string()
     .required("Confirm Password is a required field")
@@ -45,9 +48,6 @@ export default function Register() {
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
-    defaultValues:{
-      gender: "female",
-    }
   });
 
   const formSubmit = async (dataForm) => {
@@ -99,7 +99,7 @@ export default function Register() {
                 label="Username"
                 name="username"
                 type="text"
-                placeholder="username"
+                placeholder="your name"
                 register={{ ...register("username") }}
                 errorMessage={errors.username?.message}
               />
@@ -107,7 +107,7 @@ export default function Register() {
                 label="Email"
                 name="email"
                 type="email"
-                placeholder="email"
+                placeholder="example@email.com"
                 register={{ ...register("email") }}
                 errorMessage={errors.email?.message}
               />
@@ -116,7 +116,7 @@ export default function Register() {
                   label="Password"
                   name="password"
                   type={showPass ? "text" : "password"}
-                  placeholder="password"
+                  placeholder="●●●●●●●●●●●●"
                   register={{ ...register("password") }}
                   errorMessage={errors.password?.message}
                 />
@@ -132,7 +132,7 @@ export default function Register() {
                   label="Confirm Password"
                   name="confirmPassword"
                   type={showConfirm ? "text" : "password"}
-                  placeholder="confirm password"
+                  placeholder="●●●●●●●●●●●●"
                   register={{ ...register("confirmPassword") }}
                   errorMessage={errors.confirmPassword?.message}
                 />
@@ -186,7 +186,9 @@ export default function Register() {
               <div className="form-control mt-6">
                 <button className="btn btn-primary capitalize">
                   <span>
-                    {loading && <Loader w={"6"} color={"fill-white"} />}{" "}
+                    {loading && (
+                      <Loader w={"w-6"} h={"h-6"} color={"fill-white"} />
+                    )}{" "}
                   </span>
                   Register
                 </button>

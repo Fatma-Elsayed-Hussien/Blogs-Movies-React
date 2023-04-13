@@ -13,7 +13,7 @@ import BlogDetails from "./Pages/BlogDetails";
 
 function App() {
   const [posts, setPosts] = useState([]);
-  
+
   const handleAddNewPost = (newPost) => {
     setPosts([...posts, newPost]);
   };
@@ -26,10 +26,14 @@ function App() {
     setPosts(posts.map((post) => (post._id === blog._id ? { ...blog } : post)));
   };
 
+  const handleUploadImgUser = (updatedUser) =>{
+    setPosts(posts.map((post) => (post.user._id === localStorage.getItem("userId") ? {...post, user:updatedUser} : post)))
+    localStorage.setItem("userPhoto", updatedUser.photo)
+  }
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        <Header handleUploadImgUser={handleUploadImgUser} />
         <Routes>
           <Route
             path="/"

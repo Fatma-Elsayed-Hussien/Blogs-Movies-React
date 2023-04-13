@@ -1,15 +1,18 @@
 import { Link } from "react-router-dom";
+import ModalUploadImg from "./ModalUploadImg";
 
-export default function Header() {
+export default function Header({ handleUploadImgUser }) {
+
   const handleLogOut = () => {
     localStorage.removeItem("userToken");
     localStorage.removeItem("userId");
+    localStorage.removeItem("userPhoto");
     window.location.href = "/";
   };
 
   return (
     <>
-      <div className="navbar bg-neutral text-neutral-content">
+      <div className="navbar bg-neutral text-neutral-content sticky top-0 z-10">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -40,7 +43,7 @@ export default function Header() {
           <Link to="/">
             <img
               src="https://i.ibb.co/VC33YkR/logo.png"
-              className="w-36 object-cover px-4"
+              className="w-36 object-cover pl-4"
             />
           </Link>
         </div>
@@ -53,13 +56,22 @@ export default function Header() {
         </div>
 
         {localStorage.getItem("userToken") ? (
-          <div className="navbar-end lg:pr-20 pr-4 md:pr-10">
-            <div className="avatar">
-              <div className="w-9 rounded-full">
-                <img src="https://i.ibb.co/LQn4pHG/profile.png" />
+          <div className="navbar-end pr-4">
+            <label htmlFor="my-modal">
+              <div className="avatar flex items-center">
+                <div className="w-11 rounded-full cursor-pointer">
+                  <img
+                    src={`${
+                      !localStorage.getItem("userPhoto")
+                        ? "https://i.ibb.co/LQn4pHG/profile.png"
+                        : localStorage.getItem("userPhoto")
+                    }`}
+                  />
+                </div>
               </div>
-            </div>
-            <button className="pl-2 flex" onClick={handleLogOut}>
+            </label>
+            <ModalUploadImg handleUploadImgUser={handleUploadImgUser} />
+            <button className="pl-2 flex items-center" onClick={handleLogOut}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
